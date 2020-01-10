@@ -5,8 +5,9 @@ import {
   MatGridListModule,
   MatIconModule,
   MatToolbarModule,
-  MatMenuModule
+  MatMenuModule,
 } from '@angular/material';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
 @NgModule({
   exports: [
@@ -15,7 +16,8 @@ import {
     MatGridListModule,
     MatIconModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatMomentDateModule
   ],
 })
 

@@ -1,14 +1,17 @@
 <div id="login-page">
   <app-header></app-header>
-  <div>
-    
-  </div>
-  <section>
-    <div fxLayout="row">
-        <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
+  <section fxLayout="row" fxLayoutAlign="center">
+    <div class="box width-1400">
+        <div class="calendar-container">
+          <div class="login-bg" [ngStyle]="{ backgroundImage: 'url(' + bgUrl + ')'}"></div>
+          <div class="login-time" fxLayout="row" fxLayoutAlign="center center">
+            <div class="day">{{day}}</div>
+            <div class="month">{{month}}</div>
+          </div>
+        </div>
+        <div class="login-form">
+          
+        </div>
     </div>
   </section>
 </div>

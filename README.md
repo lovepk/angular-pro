@@ -24,3 +24,6 @@ index.html 引入assets/iconfont/material-icons.css
 Angular Material 没有布局组件，需要安装flex-layout: yarn add @angular/flex-layout，在SharedModule引入这个布局包
 ### 6.引入OCR-A-Std字体库
 创建assets/fonts目录及fonts.css文件声明OCR-A-Std字体
+### 7.安装moment.js库
+Angular Material 有两种关于时间组件的模块，MatNativeDateModule和MatMomentDateModule,其中MatNativeDateModule是@angular/material包中的，不建议使用；建议使用MatMomentDateModule是@angular/material-moment-adapter包中的，需要安装这个包,这个包又依赖Moment.js库，所以要安装Moment.js
+
