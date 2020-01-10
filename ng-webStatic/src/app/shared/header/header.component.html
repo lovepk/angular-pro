@@ -1,0 +1,15 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
+    <div>application Icon</div>
+    <div>
+      <button mat-button [matMenuTriggerFor]="i18Menu">
+        <span>国际化</span>
+        <mat-icon>language</mat-icon>
+      </button>
+      <mat-menu #i18Menu="matMenu">
+        <button mat-menu-item>1</button>
+        <button mat-menu-item>2</button>
+        <button mat-menu-item>3</button>
+        <button mat-menu-item>4</button>
+      </mat-menu>
+    </div>
+</mat-toolbar>

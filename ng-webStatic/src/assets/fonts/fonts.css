@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'OCR A Std';
+  src: url('OCR-A-Std/OCR-A-Std.eot');
+  src: url('OCR-A-Std/OCR-A-Std.eot?#font-spider') format('embedded-opentype'),
+   url('OCR-A-Std/OCR-A-Std.woff') format('woff'),
+    url('OCR-A-Std/OCR-A-Std.ttf') format('truetype'),
+     url('OCR-A-Std/OCR-A-Std.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
