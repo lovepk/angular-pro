@@ -2,17 +2,31 @@
   <app-header></app-header>
   <section fxLayout="row" fxLayoutAlign="center">
     <div class="box width-1400">
-        <div class="calendar-container">
-          <div class="login-bg" [ngStyle]="{ backgroundImage: 'url(' + bgUrl + ')'}"></div>
-          <div class="login-time" fxLayout="row" fxLayoutAlign="center center">
-            <div class="day">{{day}}</div>
-            <div class="month">{{month}}</div>
+      <div class="calendar-container">
+        <div class="login-bg" [ngStyle]="{ backgroundImage: 'url(' + bgUrl + ')'}"></div>
+        <div class="login-time" fxLayout="row" fxLayoutAlign="center center">
+          <div class="day">{{day}}</div>
+          <div class="month">{{month}}</div>
+        </div>
+      </div>
+      <div class="login-form">
+        <form [formGroup]="loginForm">
+          <div class="form-group">
+            <mat-form-field appearance="outline">
+              <input type="text" matInput placeholder="用户名" formControlName="username">
+              <mat-icon matPrefix>perm_identity</mat-icon>
+              <mat-error *ngIf="username.invalid && (username.dirty || username.touched) &&username.errors.required">sdfsdf</mat-error>
+            </mat-form-field>
           </div>
-        </div>
-        <div class="login-form">
-          
-        </div>
+          <div class="form-group">
+            <mat-form-field appearance="outline">
+              <input type="text" matInput placeholder="密码" formControlName="password">
+              <mat-icon matPrefix>lock</mat-icon>
+              <mat-error *ngIf="password.invalid && (password.dirty || password.touched) &&password.errors.required">sdfsdf</mat-error>
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 </div>
-
